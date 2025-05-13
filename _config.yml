@@ -24,9 +24,9 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Your awesome title
-email: your-email@domain.com
-author: GitHub User
+title: NuyoaH-L
+email: nuyoah-l@outlook.com
+author: NuyoaH-L
 
 # Copyright setting
 # You can use any html code, currently below placeholders are available:
@@ -74,7 +74,7 @@ yat:
 
 # If you want to change site language, you can set lang option
 # lang: "en"  # default lang is en
-
+lang: "zh-CN"
 # Translate languges
 # langs refer to https://cloud.google.com/translate/docs/languages
 # translate_langs:
