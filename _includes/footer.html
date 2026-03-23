@@ -6,19 +6,19 @@
     <script src="https://cdn.staticfile.net/popper.js/2.11.8/umd/popper.min.js"></script>
     <script src="https://cdn.staticfile.net/bootstrap/5.3.2/js/bootstrap.min.js"></script>
     <script src="https://cdn.staticfile.net/feather-icons/4.29.1/feather.min.js"></script>
-    <script> feather.replace()</script>
+    <script src="https://v1.hitokoto.cn/?encode=js&select=%23hitokoto" defer></script>
+    <script src="https://cdn.busuanzi.cc/busuanzi/3.6.9/busuanzi.min.js" defer></script>
     <script src="https://cdn.staticfile.net/highlight.js/11.10.0/highlight.min.js"></script>
     <script src="https://cdn.staticfile.net/highlightjs-line-numbers.js/2.8.0/highlightjs-line-numbers.min.js"></script>
     <script defer>
       hljs.highlightAll();
       hljs.initLineNumbersOnLoad();
     </script>
-    <script src="https://v1.hitokoto.cn/?encode=js&select=%23hitokoto" defer></script>
-    <script src="//cdn.busuanzi.cc/busuanzi/3.6.9/busuanzi.min.js" defer></script>
-    <script src="{{ '/asserts/js/SmoothScroll.min.js' | prepend: site.baseurl }}"></script>
-    <script src="{{ '/asserts/js/Autolinker.min.js' | prepend: site.baseurl }}"></script>
+    <script> feather.replace()</script>
 
     {% if page.layout == 'post' %}
+    <script src="{{ '/asserts/js/SmoothScroll.min.js' | prepend: site.baseurl }}"></script>
+    <script src="{{ '/asserts/js/Autolinker.min.js' | prepend: site.baseurl }}"></script>
     <script src="{{ '/asserts/js/clipboard.min.js' | prepend: site.baseurl }}"></script>
     <script src="{{ '/asserts/js/tocbot.min.js' | prepend: site.baseurl }}"></script>
     <script>
