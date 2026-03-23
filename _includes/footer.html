@@ -39,7 +39,7 @@
     {% endif %}
 
     {% if page.url == '/archive/' %}
-    <script src="{{ '/asserts/js/archive.js' | prepend: site.baseurl }}"></script>
+    <script src="{{ site.baseurl }}/asserts/js/archive.js"></script>
     <script>
         $(function () {
             $.fn.tagcloud.defaults = {
@@ -50,7 +50,7 @@
     </script>
     {% endif %}
 
-    <script src="{{ '/script.js' | prepend: site.baseurl }}"></script>
+    <script src="{{ site.baseurl }}/script.js'"></script>
     <script>
         const player = new Plyr('#player', { controls: '' });
         $('.music-controls .play').click(function () {
