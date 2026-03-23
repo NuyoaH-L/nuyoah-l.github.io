@@ -1,0 +1,51 @@
+title: 化学反应罢了
+email: nuyoah-l@outlook.com
+description: >- # this means to ignore newlines until "baseurl:"
+    我知这世界本如露水般短暂，然而，然而。
+keyword: 'huafan258, nuyoah-l Blog, OIer, noip'
+baseurl: '' # the subpath of your site, e.g. /blog
+url: 'https://nuyoah-l.github.io' # the base hostname & protocol for your site, e.g. http://example.com
+
+# About/contact
+owner:
+    name: '化学反应罢了'
+    email: 'nuyoah-lnuyoah-l@outlook.com'
+    bio: ''
+
+# Data
+avatar: https://free.picui.cn/free/2026/03/23/69c0bd01221ac.jpg
+favicon: /favicon.jpg
+music:
+    title: But U - NINEONE#乃万
+    url: https://music.163.com/song/media/outer/url?id=1459232593.mp3
+
+# Build settings
+# use Github Flavored Markdown !important
+# document: http://jekyllrb.com/docs/configuration/#kramdown
+
+markdown: kramdown
+
+highlighter: rouge
+permalink: pretty
+paginate: 16
+
+# Exclude from processing.
+# The following items will not be processed, by default.
+# Any item listed under the `exclude:` key here will be automatically added to
+# the internal "default list".
+#
+# Excluded items can be processed by explicitly listing the directories or
+# their entries' file path in the `include:` list.
+#
+exclude:
+    - .jekyll-cache/
+    - gemfiles/
+    - Gemfile
+    - Gemfile.lock
+    - README.md
+
+# http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: Asia/Shanghai
+
+# Gems
+plugins: [jekyll-paginate]
