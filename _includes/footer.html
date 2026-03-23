@@ -1,0 +1,89 @@
+<footer>
+    <div class="text-center text-black-50" style="padding:1rem">
+        <div>&copy; {{ site.time | date: '%Y' }} {{ site.owner.name }} · Powered by Jekyll · Theme by Morecho</div>
+    </div>
+    <script src="https://cdn.staticfile.net/jquery/3.7.1/jquery.slim.min.js"></script>
+    <script src="http://cdn.staticfile.net/popper.js/2.11.8/umd/popper.min.js"></script>
+    <script src="https://cdn.staticfile.net/bootstrap/5.3.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.staticfile.net/feather-icons/4.29.1/feather.min.js"></script>
+    <script> feather.replace()</script>
+    <script src="https://cdn.staticfile.net/highlight.js/11.10.0/es/highlight.min.js"></script>
+    <script src="https://cdn.staticfile.net/highlightjs-line-numbers.js/2.8.0/highlightjs-line-numbers.min.js"></script>
+    <script>
+        hljs.highlightAll();
+        hljs.initLineNumbersOnLoad();
+    </script>
+    <script src="https://v1.hitokoto.cn/?encode=js&select=%23hitokoto" defer></script>
+    <script src="{{ '/asserts/js/SmoothScroll.min.js' | prepend: site.baseurl }}"></script>
+    <script src="{{ '/asserts/js/Autolinker.min.js' | prepend: site.baseurl }}"></script>
+
+    {% if page.layout == 'post' %}
+    <script src="{{ '/asserts/js/clipboard.min.js' | prepend: site.baseurl }}"></script>
+    <script src="{{ '/asserts/js/tocbot.min.js' | prepend: site.baseurl }}"></script>
+    <script src="{{'/asserts/js/busuanzi.min.js'}}"></script>
+    <script>
+        tocbot.init({
+            tocSelector: '.js-toc',
+            contentSelector: '.js-toc-content',
+            headingSelector: 'h1, h2, h3, h4',
+            hasInnerContainers: true,
+            scrollEndCallback: function(){
+                var padding = 5;
+                $('.js-toc-move').css('top', $('.is-active-li a').offset().top - $('.js-toc').offset().top - padding)
+                $('.js-toc-move').css('height', $('.is-active-li a').height() + padding*2)
+            }
+        });
+    </script>
+    {% endif %}
+
+    {% if page.url == '/archive/' %}
+    <script src="{{ '/asserts/js/archive.js' | prepend: site.baseurl }}"></script>
+    <script>
+        $(function () {
+            $.fn.tagcloud.defaults = {
+                color: { start: '#95C7E0', end: '#3CC4C5' },
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    </script>
+    {% endif %}
+
+    <script src="{{ '/script.js' | prepend: site.baseurl }}"></script>
+    <script src="{{ '/asserts/lib/plyr/plyr.polyfilled.min.js' | prepend: site.baseurl }}"></script>
+    <script>
+        const player = new Plyr('#player', { controls: '' });
+        $('.music-controls .play').click(function () {
+            player.play();
+            $('.music-controls').removeClass('paused');
+            $('.music-controls .loading').css('display', 'unset');
+        })
+        $('.music-controls .pause').click(function () {
+            player.pause();
+            $('.music-controls').addClass('paused');
+        })
+        $('.music-controls .progress').click(function (e) {
+            var progress = (e.clientX - $(this).offset().left) / $(this).width();
+            player.currentTime = parseInt(progress * player.duration);
+            $('.music-controls .play').click();
+        })
+        player.on('ended', function () {
+            $('.music-controls').addClass('paused');
+        });
+        player.on('timeupdate', function () {
+            $('.music-controls .loading').css('display', 'none');
+            if (player.duration == 0)
+                var progress = 0;
+            else
+                var progress = parseInt(player.currentTime * 100 / player.duration);
+            $('.music-controls .progress-bar:first-child').css('width', progress + '%')
+            restbuffered = parseInt(player.buffered * 100) - progress
+            $('.music-controls .progress-bar:last-child').css('width', restbuffered + '%')
+            setTimeout(function (progress) {
+                if (progress + '%' === $('.music-controls .progress-bar:first-child').css('width'))
+                    $('.music-controls .loading').css('display', 'unset');
+                else
+                    $('.music-controls .loading').css('display', 'none');
+            }, 2000)
+        })
+    </script>
+</footer>
