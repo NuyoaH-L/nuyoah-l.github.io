@@ -15,10 +15,6 @@ $ bundle exec jekyll serve
 
 you will see your blog [here](http://localhost:4000)
 
-## Progress
-
-[Check out here](progress.md)
-
 ## Thanks to  
 
 - JQuery
@@ -28,3 +24,4 @@ you will see your blog [here](http://localhost:4000)
 - Plyr
 - jekyll-TeXt-theme
 - smoothscroll.net
+- Staticfile cdn
