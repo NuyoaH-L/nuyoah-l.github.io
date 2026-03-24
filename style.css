@@ -18,6 +18,65 @@ body {
 /* sidebar */
 .sidebar {
   position: fixed;
+  top: 0;
+  left: 0;
+  width: 320px;
+  max-width: 90vw;
+  height: 100%;
+  background: #fff;
+  box-shadow: 2px 0 8px rgba(0,0,0,0.08);
+  z-index: 233;
+  transform: translateX(-100%);
+  transition: transform 0.3s cubic-bezier(.4,0,.2,1);
+  overflow-y: auto;
+  padding-bottom: 1rem;
+}
+.sidebar.active {
+  transform: translateX(0);
+}
+.card-sidebar-control {
+  cursor: pointer;
+  display: block;
+  text-align: center;
+  padding: 1rem;
+  position: absolute;
+  top: 1rem;
+  right: -3.5rem;
+  width: 3rem;
+  height: 3rem;
+  background: #fff;
+  box-shadow: 0 0.5rem .5rem rgba(0, 0, 0, 0.15) !important;
+  border-radius: 0 1.5rem 1.5rem 0;
+  z-index: 234;
+}
+.card-sidebar-control .feather {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+.sidebar .card-sidebar-control [data-control="close"] {
+  display: none;
+}
+.sidebar.active .card-sidebar-control [data-control="open"] {
+  display: none;
+}
+.sidebar.active .card-sidebar-control [data-control="close"] {
+  display: inline;
+}
+@media (max-width: 767px) {
+  .sidebar {
+    width: 80vw;
+    min-width: 220px;
+    max-width: 90vw;
+  }
+  .card-sidebar-control {
+    right: -3.5rem;
+    top: 1rem;
+  }
+}
+
+/* sidebar 
+.sidebar {
+  position: fixed;
   width: calc(100% + 20px);
   padding-right: 20px;
   height: 100%;
@@ -153,6 +212,8 @@ body {
     transform: translateX(-2rem);
   }
 }
+*/
+
 
 /* meta */
 .dynamic-hide.active .card{
