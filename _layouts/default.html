@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html class="loading">
 
 <head>
     <meta charset="utf-8" />
@@ -51,7 +51,13 @@
             </div>
         </div>
     </div>
-
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  setTimeout(() => {
+    document.documentElement.classList.remove('loading');
+  }, 150);
+});
+</script>
 </body>
 
 </html>
