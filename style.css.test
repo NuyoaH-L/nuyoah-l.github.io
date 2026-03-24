@@ -1,0 +1,151 @@
+/* ====================== 全局基础修复（核心：解决加载错位根源） ====================== */
+/* 加载阶段禁用所有动画/过渡，防止跳变错位 */
+html.loading * {
+  transition: none !important;
+  animation: none !important;
+  transform: none !important;
+}
+/* 全局盒模型统一，避免padding/margin撑大元素 */
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+}
+/* 所有卡片初始化基准：锁死定位+最小高度，防止塌陷 */
+.card {
+  position: relative;
+  min-height: 1px;
+  box-sizing: border-box;
+}
+
+/* ====================== 侧边栏卡片修复 ====================== */
+.sidebar {
+  position: fixed;
+  width: calc(100% + 20px);
+  padding-right: 20px;
+  height: 100%;
+  overflow-y: scroll;
+  padding-bottom: 1rem;
+  top: 0;
+  left: 0;
+  z-index: 232;
+}
+/* 移动端侧边栏初始状态，强制锁死位置，不偏移 */
+@media (max-width: 767px) {
+  .sidebar {
+    overflow-y: hidden;
+    z-index: 232;
+    height: 5rem;
+    transform: translateX(calc(-100% + 4rem + 35px)) !important;
+    transition: transform 0.3s ease 0s, height 0s ease 0.3s;
+  }
+}
+
+/* ====================== 内容/文章列表卡片修复 ====================== */
+/* 移除原height:0，解决容器塌陷错位 */
+.content > .container > .row,
+.content > .container > .row > div {
+  height: auto !important;
+  min-height: 1px;
+}
+/* 文章卡片初始化 */
+article {
+  font-size: 0.9rem;
+  padding: 1rem;
+  position: relative;
+  min-height: 100px;
+}
+/* 文章列表卡片 */
+.card-post-list {
+  padding: 16px;
+  margin-bottom: 24px;
+  min-height: 80px;
+}
+
+/* ====================== 音乐卡片修复 ====================== */
+.card-musicbox {
+  padding: 16px;
+  position: relative;
+  min-height: 120px;
+}
+.music-controls {
+  position: relative;
+  min-height: 40px;
+}
+.music-controls .feather {
+  cursor: pointer;
+  width: 1.5rem;
+  height: 1.5rem;
+  display: inline-block;
+}
+
+/* ====================== 代码卡片修复 ====================== */
+article pre.hljs {
+  border-radius: 0.5rem;
+  position: relative;
+  padding: 0;
+  min-height: 60px;
+  overflow: hidden;
+}
+article pre .hljs-line-number {
+  background-color: #272c33;
+  color: #a0a0a0;
+  list-style-type: none;
+  position: absolute;
+  text-align: right;
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+  width: 3em;
+  height: 100%;
+  margin-bottom: 0;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+/* ====================== 标签/云标签卡片修复 ====================== */
+.tags, #tag_cloud {
+  width: 100%;
+  min-height: 40px;
+  overflow: hidden;
+}
+.tags a, .tags .tag, #tag_cloud a, #tag_cloud .tag {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* ====================== 图片加载修复（防止图片撑大卡片错位） ====================== */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ====================== 以下为你原有CSS的保留区域 ====================== */
+/* 原有样式保留，不影响功能，直接衔接你的项目代码 */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fff;
+}
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 576px) {
+  .container { max-width: 540px; }
+}
+@media (min-width: 768px) {
+  .container { max-width: 720px; }
+}
+@media (min-width: 992px) {
+  .container { max-width: 960px; }
+}
+@media (min-width: 1200px) {
+  .container { max-width: 1140px; }
+}
