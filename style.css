@@ -15,7 +15,7 @@ body {
   height: 1rem;
 }
 
-/* sidebar */
+/* sidebar
 .sidebar {
   position: fixed;
   top: 0;
@@ -73,8 +73,9 @@ body {
     top: 1rem;
   }
 }
+*/
 
-/* sidebar 
+/* sidebar */
 .sidebar {
   position: fixed;
   width: calc(100% + 20px);
@@ -212,8 +213,6 @@ body {
     transform: translateX(-2rem);
   }
 }
-*/
-
 
 /* meta */
 .dynamic-hide.active .card{
