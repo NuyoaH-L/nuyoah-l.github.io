@@ -1,6 +1,6 @@
 <div class="dynamic-hide">
 <div class="card card-site-meta">
-    <div class="title text-center">站点信息</div>
+    <div class="title">站点信息</div>
     <div class="site-meta row text-center">
         <div class="col-4">
             <div>{{ site.posts | size }}</div>
@@ -15,7 +15,7 @@
             <div>更新</div>
         </div>
     </div>
-    <div class="title text-center">不蒜子</div>
+    <div class="title">不蒜子</div>
     <div class="site-meta row text-center">
         <div class="col-4">
             <div><span id="busuanzi_site_pv"><i class="fa fa-spinner fa-spin"></i></span></div>
@@ -30,12 +30,12 @@
             <div>Today</div>
         </div>
     </div>
-    <div class="title text-center">
+    <div class="title  text-center">
             <p id="hitokoto">
                 <a href="#" id="hitokoto_text">:D 获取中...</a>
             </p>
     </div>
-
+</div>
 
 {% if page.layout == 'post' %}
 <div class="card card-post-meta">
@@ -72,10 +72,12 @@
 
 <div class="card card-musicbox">
     <audio id="player"><source src="{{ site.music.url }}" type="audio/mp3" /></audio>
-    <div class="title text-center" style="padding-bottom: 1rem">{{ site.music.title }}</div>
-    <div class="music-controls paused text-center">
+    <div class="title" style="padding-bottom: 1rem">{{ site.music.title }}</div>
+    <div class="music-controls paused">
+        <!--span class="backward"><i data-feather="chevrons-left"></i></span-->
         <span class="pause"><i data-feather="pause"></i></span>
         <span class="play"><i data-feather="play"></i></span>
+        <!--span class="forward"><i data-feather="chevrons-right"></i></span-->
         <span class="loading" style="display:none"><i data-feather="loader"></i></span>
         <div class="progress">
             <div class="progress-bar" role="progressbar"></div>

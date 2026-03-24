@@ -21,7 +21,6 @@
       hljs.initLineNumbersOnLoad();
     </script>
     <script> feather.replace()</script>
-
     {% if page.layout == 'post' %}
     <script>
         tocbot.init({
@@ -39,7 +38,7 @@
     {% endif %}
 
     {% if page.url == '/archive/' %}
-    <script src="{{ site.baseurl }}/asserts/js/archive.js"></script>
+    <script src="{{ '/asserts/js/archive.js' | prepend: site.baseurl }}"></script>
     <script>
         $(function () {
             $.fn.tagcloud.defaults = {
@@ -50,7 +49,8 @@
     </script>
     {% endif %}
 
-    <script src="{{ site.baseurl }}/script.js'"></script>
+    <script src="{{ '/script.js' | prepend: site.baseurl }}"></script>
+    <!--<script src="{{ '/asserts/lib/plyr/plyr.polyfilled.min.js' | prepend: site.baseurl }}"></script>-->
     <script>
         const player = new Plyr('#player', { controls: '' });
         $('.music-controls .play').click(function () {
