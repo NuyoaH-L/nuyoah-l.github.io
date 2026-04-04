@@ -5,6 +5,18 @@
         <p class="owner-name">{{ site.owner.name }}</p>
     </div>
 
+    <div class="search">
+        <form>
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <div class="input-group-text"><i data-feather="search"></i></div>
+                <div>
+                    <input type="text" id="search-input" class="form-control" placeholder="Search blog posts..">
+                    <ul id="results-container"></ul></div>
+            </div>
+        </form>
+    </div>
+
     <div class="site-controls text-center align-middle">
         <div class="row">
             <div class="col-4 active" data-tab="navigation"><a href="javascript:;"><i data-feather="compass"></i><br /><span>导航</span></a></div>
@@ -38,15 +50,4 @@
     </div>
 
     <div style="height:5rem"></div>
-</div>
-<div class="search">
-    <form>
-        <div class="input-group">
-            <div class="input-group-prepend">
-                <div class="input-group-text"><i data-feather="search"></i></div>
-            </div>
-            <input type="text" id="search-input" class="form-control" placeholder="Search blog posts..">
-            <ul id="results-container"></ul>
-        </div>
-    </form>
 </div>
