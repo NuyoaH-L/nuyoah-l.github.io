@@ -330,6 +330,7 @@ body {
 .owner img {
   max-width: 100%;
   border-radius: 100%;
+  object-fit: cover;
 }
 .owner-name {
   text-align: center;

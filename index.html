@@ -6,6 +6,9 @@ layout: default
 
 {% for post in paginator.posts %}{% if post.hide %}{% else %}
 
+<div>
+    <img src="https://api.elaina.cat/random/" alt="随机图片"  class="responsive-image">
+</div>
 <div class="card card-post-list">
     <a {% if post.exterUrl %} href="{{ post.exterUrl }}" target="_blank"{% else %} href="{{ post.url | prepend: site.baseurl }}{% endif %}">
         <div class="post-title">
