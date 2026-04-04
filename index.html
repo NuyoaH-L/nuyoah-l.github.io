@@ -11,6 +11,7 @@ layout: default
 {% for post in paginator.posts %}{% if post.hide %}{% else %}
 
 <div class="card card-post-list">
+    <img src="https://api.elaina.cat/random" alt="elaina" width="100%" height="auto">
     <a {% if post.exterUrl %} href="{{ post.exterUrl }}" target="_blank"{% else %} href="{{ post.url | prepend: site.baseurl }}{% endif %}">
         <div class="post-title">
             {% if post.copyright %}「转载」{% endif %}
