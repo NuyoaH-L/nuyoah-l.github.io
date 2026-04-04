@@ -1,20 +1,18 @@
 <div class="card card-nav">
-
-    <div class="owner">
-        <img class="shadow" src="{{ site.avatar }}">
-        <p class="owner-name">{{ site.owner.name }}</p>
-    </div>
-
     <div class="search">
         <form>
             <div class="input-group">
                 <div class="input-group-prepend">
-                    <div class="input-group-text"><i data-feather="search"></i></div>
-                <div>
-                    <input type="text" id="search-input" class="form-control" placeholder="Search blog posts..">
-                    <ul id="results-container"></ul></div>
+                    <div id="search-input" class="input-group-text"><i data-feather="search"></i></div>
+                </div>
+                <input type="text" class="form-control" placeholder="搜索">
             </div>
         </form>
+    </div>
+
+    <div class="owner">
+        <img class="shadow" src="{{ site.avatar }}">
+        <p class="owner-name">{{ site.owner.name }}</p>
     </div>
 
     <div class="site-controls text-center align-middle">
@@ -24,6 +22,8 @@
             <div class="col-4" data-tab="setting"><a href="javascript:;"><i data-feather="settings"></i><br /><span>设置</span></a></div>
         </div>
     </div>
+    
+
     
     <div class="site-control">
         <div data-tab="navigation" class="active">
