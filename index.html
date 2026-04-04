@@ -8,7 +8,8 @@ layout: default
 {% for post in paginator.posts %}{% if post.hide %}{% else %}
 
 <div class="card card-post-list">
-    <img src="https://api.elaina.cat/random" alt="elaina" width="100%" height="auto">
+    <img src="https://source.unsplash.com/random/1920x1080" alt="随机图片" width="100%" height="auto">
+    <!--<img src="https://api.elaina.cat/random" alt="elaina" width="100%" height="auto">-->
     <a {% if post.exterUrl %} href="{{ post.exterUrl }}" target="_blank"{% else %} href="{{ post.url | prepend: site.baseurl }}{% endif %}">
         <div class="post-title">
             {% if post.copyright %}「转载」{% endif %}
