@@ -9,7 +9,7 @@ Page Plan
 - [ ] about
 - [x] archive
 - [x] post
-- [ ] comment board
+- [x] comment board
 - [ ] single page
 
 Feature Plan
