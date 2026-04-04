@@ -5,25 +5,22 @@ description: >- # this means to ignore newlines until "baseurl:"
     line in _config.yml. It will appear in your document head meta (for
     Google search results) and in your feed.xml site description.
 keyword: 'MuZhou, MuZhou Blog, OIer, noip'
-baseurl: '' # the subpath of your site, e.g. /blog
-url: 'https://mosarin.tech' # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: ''
+url: 'https://mosarin.tech'
 
-# About/contact
+
 owner:
-    name: '沐雨橙舟'
-    email: 'MuZhou233@outlook.com'
+    name: '化学反应罢了'
+    email: 'huafan258@gmail.com'
     bio: ''
 
 # Data
-avatar: /asserts/img/avatar.jpg
+avatar: /https://free.picui.cn/free/2026/03/23/69c0bd01221ac.jpg
 favicon: /favicon.jpg
 music:
-    title: なつめ千秋,GUMI - センチメンタルな愛慕心
-    url: /asserts/lib/plyr/test.mp3
+    title: But U - NINEONE#乃万
+    url: https://music.163.com/song/media/outer/url?id=1459232593.mp3
 
-# Build settings
-# use Github Flavored Markdown !important
-# document: http://jekyllrb.com/docs/configuration/#kramdown
 
 markdown: kramdown
 
