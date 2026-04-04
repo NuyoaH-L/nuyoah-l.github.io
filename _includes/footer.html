@@ -56,17 +56,6 @@
     <script src="{{ '/asserts/lib/plyr/plyr.polyfilled.min.js' | prepend: site.baseurl }}"></script>
     <script>
         const player = new Plyr('#player', { controls: '' });
-        /*
-        player.source = {
-            type: 'audio',
-            sources: [
-                {
-                    src: '/asserts/lib/plyr/test.mp3',
-                    type: 'audio/mp3',
-                },
-            ],
-        };
-        */
         $('.music-controls .play').click(function () {
             player.play();
             $('.music-controls').removeClass('paused');
