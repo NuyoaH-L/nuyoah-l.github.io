@@ -4,15 +4,11 @@ layout: default
 
 
 <h1 class="title">{{ site.title }}</h1>
-<p class="subtitle text-center">我知这世界本如露水般短暂，然而，然而</p>
+<img src="https://app.zichen.zone/api/acg/api.php" alt="ziche" width="100%" height="auto">
 
 {% for post in paginator.posts %}{% if post.hide %}{% else %}
 
 <div class="card card-post-list">
-    <img src="https://app.zichen.zone/api/acg/api.php" alt="ziche" width="100%" height="auto">
-    <!--<img src="https://www.dmoe.cc/random.php" alt="dome" width="100%" height="auto">
-    <img src="https://source.unsplash.com/random/1920x1080" alt="unslash" width="100%" height="auto">
-    <img src="https://api.elaina.cat/random" alt="elaina" width="100%" height="auto">-->
     <a {% if post.exterUrl %} href="{{ post.exterUrl }}" target="_blank"{% else %} href="{{ post.url | prepend: site.baseurl }}{% endif %}">
         <div class="post-title">
             {% if post.copyright %}「转载」{% endif %}
