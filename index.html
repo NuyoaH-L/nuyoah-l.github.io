@@ -2,14 +2,14 @@
 layout: default
 ---
 
-<h1 class="title">{{ site.title }}</h1>
+<div class="box card card-post-list">
+    <h1 class="title">{{ site.title }}</h1>
+</div>
+
 
 {% for post in paginator.posts %}{% if post.hide %}{% else %}
 
 <div class="card card-post-list">
-    <div class="img-box">
-        <img src="https://api.elaina.cat/random/" alt="随机图片"  class="responsive-image">
-    </div>
     <a {% if post.exterUrl %} href="{{ post.exterUrl }}" target="_blank"{% else %} href="{{ post.url | prepend: site.baseurl }}{% endif %}">
         <div class="post-title">
             {% if post.copyright %}「转载」{% endif %}

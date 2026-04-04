@@ -724,3 +724,13 @@ a.toc-link:hover {
   object-fit: cover;
   object-position: center;
 }
+
+.box {
+  width: 300px;
+  height: 200px;
+  /* 背景图核心 */
+  background-image: https://api.elaina.cat/random/;
+  background-size: cover;    /* 填满容器，等比例，多余裁剪 */
+  background-position: center; /* 居中 */
+  background-repeat: no-repeat; /* 不重复 */
+}
