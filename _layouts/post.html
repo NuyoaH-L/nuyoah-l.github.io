@@ -7,4 +7,11 @@ layout: default
 <article class="card card-article">
     {% if page.subtitle %}<h2 class="subtitle">{{ page.subtitle }}</h2>{% endif %}
     {{ content }}
+    <script src="https://utteranc.es/client.js"
+            repo="{{ site.utterances.repo }}"
+            issue-term="{{ site.utterances.issue-term }}"
+            theme="{{ site.utterances.theme }}"
+            crossorigin="anonymous"
+            async>
+    </script>
 </article>

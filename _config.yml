@@ -21,6 +21,11 @@ music:
     title: But U - NINEONE#乃万
     url: https://music.163.com/song/media/outer/url?id=1459232593.mp3
 
+#Utterances
+utterances:
+    repo: 'nuyoah-l/nuyoah-l.github.io'
+    theme: 'github-light'
+    issue-term: 'title'
 
 markdown: kramdown
 
