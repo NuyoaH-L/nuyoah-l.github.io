@@ -6,16 +6,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
 
 <link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/NuyoaH-L/dev-picgo@main/icon.jpg" type="image/x-jpg" />
-<meta name="description" content="一、独立按键先构建空工程，并打开创建HEX文件的选项。 123void main()&#123;	&#125; 观察原理图可知K1按键由P31引脚控制,当按下K1时由高电平转为低电平,我们可以通过一个简单的判断语句来判断按键的按下和松开并做出反应，例如： 12345678void main()&#123;	if(P3_1&#x3D;&#x3D;0)&#123;		P2&#x3D;0xFE;	&#125;	else&#123;">
+<meta name="description" content="一、独立按键先构建空工程，并打开创建HEX文件的选项。 123void main()&#123;&#125;  观察原理图可知K1按键由P31引脚控制,当按下K1时由高电平转为低电平,我们可以通过一个简单的判断语句来判断按键的按下和松开并做出反应，例如： 12345678void main()&#123;    if(P3_1&#x3D;&#x3D;0)&#123;        P2&#x3D;0xFE;    &#125;">
 <meta property="og:type" content="article">
 <meta property="og:title" content="独立按键、按键控制移位、按键函数的封装">
 <meta property="og:url" content="https://blog.onlyrxn.top/2026/04/11/002/index.html">
 <meta property="og:site_name" content="孤灯不明思欲绝，卷帷望月空长叹">
-<meta property="og:description" content="一、独立按键先构建空工程，并打开创建HEX文件的选项。 123void main()&#123;	&#125; 观察原理图可知K1按键由P31引脚控制,当按下K1时由高电平转为低电平,我们可以通过一个简单的判断语句来判断按键的按下和松开并做出反应，例如： 12345678void main()&#123;	if(P3_1&#x3D;&#x3D;0)&#123;		P2&#x3D;0xFE;	&#125;	else&#123;">
+<meta property="og:description" content="一、独立按键先构建空工程，并打开创建HEX文件的选项。 123void main()&#123;&#125;  观察原理图可知K1按键由P31引脚控制,当按下K1时由高电平转为低电平,我们可以通过一个简单的判断语句来判断按键的按下和松开并做出反应，例如： 12345678void main()&#123;    if(P3_1&#x3D;&#x3D;0)&#123;        P2&#x3D;0xFE;    &#125;">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://img.onlyrxn.cc.cd/PicGo/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202026-04-11%20161150.png">
 <meta property="article:published_time" content="2026-04-10T16:00:00.000Z">
-<meta property="article:modified_time" content="2026-04-24T08:43:04.036Z">
+<meta property="article:modified_time" content="2026-04-24T14:28:58.047Z">
 <meta property="article:author" content="OnlyRxn">
 <meta property="article:tag" content="单片机">
 <meta name="twitter:card" content="summary">
@@ -29,13 +29,13 @@
     <link rel="stylesheet" href="https://at.alicdn.com/t/c/font_5164562_tvjzszng8gd.css">
 
 
-<link rel="stylesheet" href="/css/style.css?v=1777025864789">
+<link rel="stylesheet" href="/css/style.css?v=1777041463125">
 
 
 
 
     
-        <link rel="stylesheet" href="/custom.css?v=1777025864789">
+        <link rel="stylesheet" href="/custom.css?v=1777041463125">
     
 
 
@@ -45,7 +45,7 @@
 <script src="/lib/lax.min.js" async></script>
 
 
-<script async src="/js/app.js?v=1777025864789"></script>
+<script async src="/js/app.js?v=1777041463125"></script>
 
  
 
@@ -60,8 +60,8 @@
         </a>
     </div>
     <div class="nexmoe-count">
-        <div><span>文章</span>4</div>
-        <div><span>标签</span>2</div>
+        <div><span>文章</span>5</div>
+        <div><span>标签</span>3</div>
         <div><span>分类</span>1</div>
     </div>
     <div class="nexmoe-list mdui-list" mdui-collapse="{accordion: true}">
@@ -106,7 +106,7 @@
 </div>
 
 
-	<script async src="/js/search.js?v=1777025864789"></script>
+	<script async src="/js/search.js?v=1777041463125"></script>
 
 
 
@@ -201,7 +201,7 @@
 
         <li class="category-list-item">
           <a class="category-list-link" href="/categories/blog/">blog</a>
-          <span class="category-list-count">4</span>
+          <span class="category-list-count">5</span>
         </li>
 
         
@@ -216,12 +216,12 @@
         
   <div class="nexmoe-widget-wrap">
     <div id="randomtagcloud" class="nexmoe-widget tagcloud nexmoe-rainbow">
-      <a href="/tags/%E5%8D%95%E7%89%87%E6%9C%BA/" style="font-size: 20px;">单片机</a> <a href="/tags/%E9%9A%8F%E6%83%B3/" style="font-size: 10px;">随想</a>
+      <a href="/tags/Ubuntu/" style="font-size: 10px;">Ubuntu</a> <a href="/tags/%E5%8D%95%E7%89%87%E6%9C%BA/" style="font-size: 20px;">单片机</a> <a href="/tags/%E9%9A%8F%E6%83%B3/" style="font-size: 10px;">随想</a>
     </div>
     
       <script>
         var maxTagcloud = parseInt(17);
-        var tags_length = parseInt(2);
+        var tags_length = parseInt(3);
         var tags_arr = [];
         for(var i = 0; i < tags_length; i++){
           tags_arr.push(i);
@@ -286,7 +286,7 @@
   <div class="nexmoe-widget-wrap">
     <h3 class="nexmoe-widget-title">文章归档</h3>
     <div class="nexmoe-widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2026/">2026</a><span class="archive-list-count">4</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2026/">2026</a><span class="archive-list-count">5</span></li></ul>
     </div>
   </div>
 
@@ -360,16 +360,20 @@
 </div>
 
     <h2 id="一、独立按键"><a href="#一、独立按键" class="headerlink" title="一、独立按键"></a>一、独立按键</h2><p><img onerror="imgOnError(this);" data-fancybox="gallery" src="https://img.onlyrxn.cc.cd/PicGo/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202026-04-11%20161150.png" alt="独立按键原理图" data-caption="独立按键原理图" loading="lazy"><br>先构建空工程，并打开创建HEX文件的选项。</p>
-<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs c"><span class="hljs-type">void</span> <span class="hljs-title function_">main</span><span class="hljs-params">()</span>&#123;<br>	<br>&#125;<br></code></pre></td></tr></table></figure>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs c"><span class="hljs-type">void</span> <span class="hljs-title function_">main</span><span class="hljs-params">()</span>&#123;<br><br>&#125;<br></code></pre></td></tr></table></figure>
+
 <p>观察原理图可知K1按键由P31引脚控制,当按下K1时由高电平转为低电平,我们可以通过一个简单的判断语句来判断按键的按下和松开并做出反应，例如：</p>
-<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs c"><span class="hljs-type">void</span> <span class="hljs-title function_">main</span><span class="hljs-params">()</span>&#123;<br>	<span class="hljs-keyword">if</span>(P3_1==<span class="hljs-number">0</span>)&#123;<br>		P2=<span class="hljs-number">0xFE</span>;<br>	&#125;<br>	<span class="hljs-keyword">else</span>&#123;<br>		P2=<span class="hljs-number">0xFF</span>;<br>	&#125;<br>&#125;<br></code></pre></td></tr></table></figure>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs c"><span class="hljs-type">void</span> <span class="hljs-title function_">main</span><span class="hljs-params">()</span>&#123;<br>    <span class="hljs-keyword">if</span>(P3_1==<span class="hljs-number">0</span>)&#123;<br>        P2=<span class="hljs-number">0xFE</span>;<br>    &#125;<br>    <span class="hljs-keyword">else</span>&#123;<br>        P2=<span class="hljs-number">0xFF</span>;<br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure>
+
 <p>由于此处的独立按键相当于常闭按钮，所以在编译程序并下载到单片机后我们会发现按键在按下之后松开的瞬间，LED灯就会熄灭。要想实现按下按键让灯常亮，再按下一次按键让灯常灭我们就需要对代码进行适度修改。</p>
 <blockquote>
 <p>这里提供一种思路：引入一个随按键每次按下而改变的值，通过这个值来控制LED灯的亮灭,实现按键的伪自锁（因为按键按下后就会松开，并没有保持按下状态）。</p>
 </blockquote>
 <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><code class="hljs c">bit key = <span class="hljs-number">0</span>; <span class="hljs-comment">//引入一个值key</span><br><span class="hljs-type">void</span> <span class="hljs-title function_">main</span><span class="hljs-params">()</span>&#123;<br>    <span class="hljs-keyword">while</span>(<span class="hljs-number">1</span>) <span class="hljs-comment">//进入死循环</span><br>    &#123;<br>        <span class="hljs-keyword">if</span>(P3_1==<span class="hljs-number">0</span>) <span class="hljs-comment">//判断按键的按下</span><br>        &#123;<br>            <span class="hljs-keyword">while</span>(P3_1==<span class="hljs-number">0</span>); <span class="hljs-comment">//当松开按键后括号内条件不成立运行后续程序</span><br>            key=!key; <span class="hljs-comment">//反转引入变量key的值</span><br>        &#125;<br>        <span class="hljs-keyword">if</span>(key) P2_0=<span class="hljs-number">0</span>; <span class="hljs-comment">//点亮LED</span><br>        <span class="hljs-keyword">else</span> P2_0=<span class="hljs-number">1</span>; <span class="hljs-comment">//熄灭LED</span><br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure>
+
 <p>由于单片机的按键存在抖动（由机械触点的弹性及电气特性引起，在按下或释放瞬间会产生短暂的多次开关信号波动）。通常按键在按下沿与释放沿各存在约 5～10ms 的抖动，合计抖动时长约 10～20ms。在此期间，按键电平不稳定，单片机可能会将一次按键操作识别为多次触发，导致受控元件出现频繁通断、状态反复切换的现象。在这里表现为 LED 出现异常闪烁。像LED这样的小电流元器件可能不会造成什么影响，但若控制对象为工业上的继电器、电机等大功率或感性负载，频繁通断则可能造成触点烧蚀、器件过压损坏等不可逆影响。所以一般的类似程序都会对程序进行消抖，用于减少按键抖动的影响。</p>
 <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><code class="hljs c"><span class="hljs-comment">//对上述程序进行简单的延时消抖后：</span><br><span class="hljs-meta">#<span class="hljs-keyword">include</span> <span class="hljs-string">&lt;REGX52.H&gt;</span></span><br><span class="hljs-meta">#<span class="hljs-keyword">define</span> delay 10</span><br>bit key = <span class="hljs-number">0</span>;<br><span class="hljs-type">void</span> <span class="hljs-title function_">delay_ms</span><span class="hljs-params">(<span class="hljs-type">unsigned</span> <span class="hljs-type">int</span> ms)</span> &#123;<br>    <span class="hljs-type">unsigned</span> <span class="hljs-type">int</span> i, j;<br>    <span class="hljs-keyword">for</span>(i = <span class="hljs-number">0</span>; i &lt; ms; i++)<br>        <span class="hljs-keyword">for</span>(j = <span class="hljs-number">0</span>; j &lt; <span class="hljs-number">120</span>; j++);<br>&#125;<br><span class="hljs-type">void</span> <span class="hljs-title function_">main</span><span class="hljs-params">()</span> &#123;<br>    <span class="hljs-keyword">while</span>(<span class="hljs-number">1</span>) &#123;<br>        <span class="hljs-keyword">if</span>(P3_1 == <span class="hljs-number">0</span>) &#123;<br>            delay_ms(delay);<br>            <span class="hljs-keyword">if</span>(P3_1 == <span class="hljs-number">0</span>) &#123; <br>                key = !key; <br>                <span class="hljs-keyword">while</span>(P3_1 == <span class="hljs-number">0</span>);<br>                delay_ms(delay);<br>            &#125;<br>        &#125;<br>        <span class="hljs-keyword">if</span>(key) P2_0=<span class="hljs-number">0</span>;<br>        <span class="hljs-keyword">else</span> P2_0=<span class="hljs-number">1</span>;<br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure>
+
 <h2 id="二、按键控制位移"><a href="#二、按键控制位移" class="headerlink" title="二、按键控制位移"></a>二、按键控制位移</h2>
     <!<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="70" src="https://i.y.qq.com/n2/m/outchain/player/index.html?songid=126701493&amp;songtype=0"></iframe>-->
 
@@ -397,7 +401,7 @@
 </div>
   
   
-    <script async src="/js/copy-codeblock.js?v=1777025864767"></script>
+    <script async src="/js/copy-codeblock.js?v=1777041463097"></script>
   
 
   
