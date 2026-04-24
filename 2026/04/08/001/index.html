@@ -36,13 +36,13 @@
     <link rel="stylesheet" href="https://at.alicdn.com/t/c/font_5164562_tvjzszng8gd.css">
 
 
-<link rel="stylesheet" href="/css/style.css?v=1777043426963">
+<link rel="stylesheet" href="/css/style.css?v=1777047130372">
 
 
 
 
     
-        <link rel="stylesheet" href="/custom.css?v=1777043426963">
+        <link rel="stylesheet" href="/custom.css?v=1777047130372">
     
 
 
@@ -52,7 +52,7 @@
 <script src="/lib/lax.min.js" async></script>
 
 
-<script async src="/js/app.js?v=1777043426963"></script>
+<script async src="/js/app.js?v=1777047130372"></script>
 
  
 
@@ -68,7 +68,7 @@
     </div>
     <div class="nexmoe-count">
         <div><span>文章</span>6</div>
-        <div><span>标签</span>3</div>
+        <div><span>标签</span>4</div>
         <div><span>分类</span>1</div>
     </div>
     <div class="nexmoe-list mdui-list" mdui-collapse="{accordion: true}">
@@ -87,7 +87,7 @@
             </div>
         </a>
         
-        <a class="nexmoe-list-item mdui-list-item mdui-ripple false" target="_blank" rel="noopener" href="https://i.nexmoe.com/" title="关于博主">
+        <a class="nexmoe-list-item mdui-list-item mdui-ripple false" target="_blank" rel="noopener" href="https://onlyrxn.pages.dev/" title="关于博主">
             <i class="mdui-list-item-icon nexmoefont icon-info-circle"></i>
             <div class="mdui-list-item-content">
                 关于博主
@@ -113,7 +113,7 @@
 </div>
 
 
-	<script async src="/js/search.js?v=1777043426964"></script>
+	<script async src="/js/search.js?v=1777047130372"></script>
 
 
 
@@ -223,12 +223,12 @@
         
   <div class="nexmoe-widget-wrap">
     <div id="randomtagcloud" class="nexmoe-widget tagcloud nexmoe-rainbow">
-      <a href="/tags/Ubuntu/" style="font-size: 10px;">Ubuntu</a> <a href="/tags/%E5%8D%95%E7%89%87%E6%9C%BA/" style="font-size: 20px;">单片机</a> <a href="/tags/%E9%9A%8F%E6%83%B3/" style="font-size: 10px;">随想</a>
+      <a href="/tags/Ubuntu/" style="font-size: 10px;">Ubuntu</a> <a href="/tags/%E5%8D%95%E7%89%87%E6%9C%BA/" style="font-size: 20px;">单片机</a> <a href="/tags/%E6%96%87%E6%91%98/" style="font-size: 10px;">文摘</a> <a href="/tags/%E9%9A%8F%E6%83%B3/" style="font-size: 10px;">随想</a>
     </div>
     
       <script>
         var maxTagcloud = parseInt(17);
-        var tags_length = parseInt(3);
+        var tags_length = parseInt(4);
         var tags_arr = [];
         for(var i = 0; i < tags_length; i++){
           tags_arr.push(i);
@@ -365,7 +365,11 @@
     
     
 </div>
-
+    
+    <blockquote class="post-subtitle">
+        <p>单片机学习之旅 day_1</p>
+    </blockquote>
+    
     <h2 id="一、安装必要软件"><a href="#一、安装必要软件" class="headerlink" title="一、安装必要软件"></a>一、安装必要软件</h2><p>1，keil uvision5 <a target="_blank" rel="noopener" href="https://www.keil.com/demo/eval/c51.htm">点此链接前往官网下载</a></p>
 <p>2，STC-ISP <a target="_blank" rel="noopener" href="https://stcmicro.com/rar/stc-isp6.96s.rar">点此链接前往官网下载</a></p>
 <blockquote>
@@ -413,21 +417,39 @@
 <p>这是一种极其原始的方法，代码繁琐但必定有效，更高阶一些的写法,如<strong>unsigned char</strong>可以让控制LED的八位二进制的高电平位从右往左移动，对应单片机LED灯从左往右依次点亮后熄灭，实现流水灯的效果。</p>
 <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><code class="hljs c"><span class="hljs-type">unsigned</span> <span class="hljs-type">char</span> ucled=<span class="hljs-number">0x01</span>; <span class="hljs-comment">//0000 0001</span><br><span class="hljs-type">void</span> <span class="hljs-title function_">main</span><span class="hljs-params">()</span>&#123;<br>    <span class="hljs-keyword">while</span>(<span class="hljs-number">1</span>)&#123;<br>    P2=~ucled;<br>    Delay500ms();<br>    ucled&lt;&lt;=<span class="hljs-number">1</span>;<br>    <span class="hljs-keyword">if</span>(ucled==<span class="hljs-number">0x00</span>) ucled=<span class="hljs-number">0x01</span>; <span class="hljs-comment">//循环</span><br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure>
 
-    <!<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="70" src="https://i.y.qq.com/n2/m/outchain/player/index.html?songid=126701493&amp;songtype=0"></iframe>-->
+    <href>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="70" src="https://i.y.qq.com/n2/m/outchain/player/index.html?songid=126701493&amp;songtype=0"></iframe>
 
   </article>
 
   
       
     <div class="nexmoe-post-copyright">
-        <strong>本文作者：</strong>OnlyRxn<br>
-        <strong>本文链接：</strong><a href="https://blog.onlyrxn.top/2026/04/08/001/" title="https:&#x2F;&#x2F;blog.onlyrxn.top&#x2F;2026&#x2F;04&#x2F;08&#x2F;001&#x2F;" target="_blank" rel="noopener">https:&#x2F;&#x2F;blog.onlyrxn.top&#x2F;2026&#x2F;04&#x2F;08&#x2F;001&#x2F;</a><br>
+        <!-- 1. 作者：优先文章作者，其次全局作者 -->
+        <p>
+            <strong>本文作者：</strong>
+            <span>OnlyRxn</span>
+        </p>
+
+        <!-- 2. 标题 -->
+        <p>
+            <strong>本文标题：</strong>
+            <span>新建工程、点亮LED、LED闪烁、LED流水灯</span>
+        </p>
+
+        <!-- 3. 链接逻辑：二选一 -->
         
-            <strong>版权声明：</strong>本文采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/cn/deed.zh" target="_blank">CC BY-NC-SA 3.0 CN</a> 协议进行许可
+            <!-- 原创：显示本文链接 -->
+            <p>
+                <strong>本文链接：</strong>
+                <span><a href="https://blog.onlyrxn.top/2026/04/08/001/" title="https:&#x2F;&#x2F;blog.onlyrxn.top&#x2F;2026&#x2F;04&#x2F;08&#x2F;001&#x2F;" target="_blank" rel="noopener">https:&#x2F;&#x2F;blog.onlyrxn.top&#x2F;2026&#x2F;04&#x2F;08&#x2F;001&#x2F;</a></span>
+            </p>
+        
+        
+        <strong>版权声明：</strong>本文采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/cn/deed.zh" target="_blank">CC BY-NC-SA 3.0 CN</a> 协议进行许可
 
         
     </div>
-
 
   
   
@@ -439,7 +461,7 @@
 </div>
   
   
-    <script async src="/js/copy-codeblock.js?v=1777043426929"></script>
+    <script async src="/js/copy-codeblock.js?v=1777047130338"></script>
   
 
   
@@ -456,7 +478,8 @@ twikoo.init({
 
       </div>
   
-</div></div><div class="nexmoe-post-right">    <div class="nexmoe-fixed">
+</div>
+</div><div class="nexmoe-post-right">    <div class="nexmoe-fixed">
         <div class="nexmoe-tool">
 
             
