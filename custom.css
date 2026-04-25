@@ -1,22 +1,38 @@
 :root {
-    --gutter: 25px;
+    --gutter: 24px;
     --radius: 13px;
-    --color-primary: lab(37.26% 29.01 -38.36);
-    --color2: #ff761e;
+    --color-primary: #e67249;
+    --color2: rgba(255, 118, 30, 0.5);
     --color3: #ffb900;
     --color4: #33d57a;
     --color5: #00dbff;
     --color6: #1a98ff;
     --color7: #9090ff;
-    --color-primary-bg: rgba(255,78,106,0.15);
-    --color2-bg: rgba(255,118,30,0.15);
-    --color3-bg: rgba(255,185,0,0.15);
-    --color4-bg: rgba(51,213,122,0.15);
-    --color5-bg: rgba(0,219,255,0.15);
-    --color6-bg: rgba(26,152,255,0.15);
-    --color7-bg: rgba(144,144,255,0.15);
+    --color-primary-bg: rgba(255, 78, 106, 0.15);
+    --color2-bg: rgba(255, 118, 30, 0.15);
+    --color3-bg: rgba(255, 185, 0, 0.15);
+    --color4-bg: rgba(51, 213, 122, 0.15);
+    --color5-bg: rgba(0, 219, 255, 0.15);
+    --color6-bg: rgba(26, 152, 255, 0.15);
+    --color7-bg: rgba(144, 144, 255, 0.15);
     --color-shadow: rgba(161, 177, 204, 0.4);
+    --color-card: #fff;
+    --color-card-opacity: rgba(255, 255, 255, 0.5);
+    --color-text-1: #111;
+    --color-text-2: #444;
+    --color-text-3: #363636;
+    --color-primary-shadow: rgba(106, 75, 143, 0.3);
+    --glass-bg: rgba(255, 255, 255, 0.15);
+    --glass-blur: 10px;
+    --glass-border: rgba(255, 255, 255, 0.3);
 }
+
+/* 所有工具栏统一缩短为 40px */
+.mdui-toolbar {
+  height: 40px !important;
+  line-height: 40px !important;
+}
+
 /* 一言组件 - 禁用滚动动画 */
 .nexmoe-widget-wrap .nexmoe-widget .hitokoto-box {
   overflow: visible !important;
@@ -29,7 +45,7 @@
   display: block !important;
   text-align: center !important;
   line-height: 1.6 !important;
-  transform: none !important;       /* 清除可能的位移 */
+  transform: none !important;
   -webkit-transform: none !important;
 }
 

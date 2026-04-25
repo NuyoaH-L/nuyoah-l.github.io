@@ -10,22 +10,7 @@
   <link href="https://blog.onlyrxn.top/atom.xml" rel="self"/>
   <rights>All rights reserved 2026, OnlyRxn</rights>
   <title>孤灯不明思欲绝，卷帷望月空长叹</title>
-  <updated>2026-04-24T16:04:09.899Z</updated>
-  <entry>
-    <author>
-      <name>OnlyRxn</name>
-    </author>
-    <category term="blog" scheme="https://blog.onlyrxn.top/categories/blog/"/>
-    <category term="文摘" scheme="https://blog.onlyrxn.top/tags/%E6%96%87%E6%91%98/"/>
-    <id>https://blog.onlyrxn.top/2026/04/24/005/</id>
-    <link href="https://blog.onlyrxn.top/2026/04/24/005/"/>
-    <published>2026-04-23T16:00:00.000Z</published>
-    <summary>
-      <![CDATA[<h2 id="人工智能给我大学四年的本科生活带来的撕裂感"><a href="#人工智能给我大学四年的本科生活带来的撕裂感" class="headerlink"]]>
-    </summary>
-    <title>人工智能给我大学四年的本科生活带来的撕裂感</title>
-    <updated>2026-04-24T16:04:09.899Z</updated>
-  </entry>
+  <updated>2026-04-25T06:06:00.165Z</updated>
   <entry>
     <author>
       <name>OnlyRxn</name>
@@ -39,7 +24,22 @@
       <![CDATA[<img onerror="imgOnError(this);" data-fancybox="gallery"]]>
     </summary>
     <title>ubuntu使用过程中所遇到的问题及解决办法</title>
-    <updated>2026-04-24T15:10:18.203Z</updated>
+    <updated>2026-04-25T06:06:00.165Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>OnlyRxn</name>
+    </author>
+    <category term="文摘" scheme="https://blog.onlyrxn.top/categories/%E6%96%87%E6%91%98/"/>
+    <category term="文摘" scheme="https://blog.onlyrxn.top/tags/%E6%96%87%E6%91%98/"/>
+    <id>https://blog.onlyrxn.top/2026/04/24/005/</id>
+    <link href="https://blog.onlyrxn.top/2026/04/24/005/"/>
+    <published>2026-04-23T16:00:00.000Z</published>
+    <summary>
+      <![CDATA[<h2 id="人工智能给我大学四年的本科生活带来的撕裂感"><a href="#人工智能给我大学四年的本科生活带来的撕裂感" class="headerlink"]]>
+    </summary>
+    <title>人工智能给我大学四年的本科生活带来的撕裂感</title>
+    <updated>2026-04-25T06:06:07.067Z</updated>
   </entry>
   <entry>
     <author>
@@ -52,7 +52,7 @@
     <published>2026-04-17T16:00:00.000Z</published>
     <summary>这里的内容加密了，需要密码哦。</summary>
     <title>今日今时所想之事</title>
-    <updated>2026-04-24T14:29:03.407Z</updated>
+    <updated>2026-04-25T06:05:26.101Z</updated>
   </entry>
   <entry>
     <author>
@@ -67,7 +67,7 @@
       <![CDATA[<h2 id="一、独立按键"><a href="#一、独立按键" class="headerlink" title="一、独立按键"></a>一、独立按键</h2><p><img onerror="imgOnError(this);"]]>
     </summary>
     <title>独立按键、按键控制移位、按键函数的封装</title>
-    <updated>2026-04-24T14:28:58.047Z</updated>
+    <updated>2026-04-25T06:04:27.834Z</updated>
   </entry>
   <entry>
     <author>
@@ -82,7 +82,7 @@
       <![CDATA[<h2 id="一、安装必要软件"><a href="#一、安装必要软件" class="headerlink" title="一、安装必要软件"></a>一、安装必要软件</h2><p>1，keil uvision5 <a]]>
     </summary>
     <title>新建工程、点亮LED、LED闪烁、LED流水灯</title>
-    <updated>2026-04-24T08:43:11.032Z</updated>
+    <updated>2026-04-25T06:04:07.124Z</updated>
   </entry>
   <entry>
     <author>
