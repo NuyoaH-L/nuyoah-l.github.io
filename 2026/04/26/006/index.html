@@ -1,19 +1,22 @@
 <!doctype html>
 <html lang="zh"><head>
-<title>Friend - 孤灯不明思欲绝，卷帷望月空长叹</title>
+<title>ubuntu使用过程中所遇到的问题及解决办法 - 孤灯不明思欲绝，卷帷望月空长叹</title>
 <meta charset="UTF-8">
 <meta name="keywords" content="">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
 
 <link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/NuyoaH-L/dev-picgo@main/icon.jpg" type="image/x-jpg" />
-<meta property="og:type" content="website">
-<meta property="og:title" content="Friend">
-<meta property="og:url" content="https://blog.onlyrxn.top/friend.html">
+<meta name="description" content="一、开始菜单1,电源选项功能键失效在使用开始菜单电源选项功能键执行关机，重启等操作后会弹出一个全屏窗口，这个窗口就像在你的屏幕上加上了一层透明度很低的毛玻璃会卡住导致电脑无法关机，刚遇到这个问题时可以通过 Ctrl+Alt+T 来调出终端，输入命令来执行关机、重启等操作，虽然看不清界面，但输入命令回车后是系统可以正常执行命令的。但是后面不知道为什么这个方法失效了，命令无法正常执行，只能通过 Alt">
+<meta property="og:type" content="article">
+<meta property="og:title" content="ubuntu使用过程中所遇到的问题及解决办法">
+<meta property="og:url" content="https://blog.onlyrxn.top/2026/04/26/006/index.html">
 <meta property="og:site_name" content="孤灯不明思欲绝，卷帷望月空长叹">
+<meta property="og:description" content="一、开始菜单1,电源选项功能键失效在使用开始菜单电源选项功能键执行关机，重启等操作后会弹出一个全屏窗口，这个窗口就像在你的屏幕上加上了一层透明度很低的毛玻璃会卡住导致电脑无法关机，刚遇到这个问题时可以通过 Ctrl+Alt+T 来调出终端，输入命令来执行关机、重启等操作，虽然看不清界面，但输入命令回车后是系统可以正常执行命令的。但是后面不知道为什么这个方法失效了，命令无法正常执行，只能通过 Alt">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2026-04-24T07:56:08.883Z">
-<meta property="article:modified_time" content="2026-04-24T07:56:08.882Z">
+<meta property="article:published_time" content="2026-04-25T16:00:00.000Z">
+<meta property="article:modified_time" content="2026-04-27T10:34:54.847Z">
 <meta property="article:author" content="OnlyRxn">
+<meta property="article:tag" content="Ubuntu">
 <meta name="twitter:card" content="summary">
 
 <link rel="stylesheet" href="/lib/fancybox/fancybox.css">
@@ -24,13 +27,13 @@
     <link rel="stylesheet" href="https://at.alicdn.com/t/c/font_5164562_igdg31ww7e.css">
 
 
-<link rel="stylesheet" href="/css/style.css?v=1777292072941">
+<link rel="stylesheet" href="/css/style.css?v=1777292072944">
 
 
 
 
     
-        <link rel="stylesheet" href="/custom.css?v=1777292072941">
+        <link rel="stylesheet" href="/custom.css?v=1777292072944">
     
 
 
@@ -40,7 +43,7 @@
 <script src="/lib/lax.min.js" async></script>
 
 
-<script async src="/js/app.js?v=1777292072941"></script>
+<script async src="/js/app.js?v=1777292072944"></script>
 
  
 
@@ -101,7 +104,7 @@
 </div>
 
 
-	<script async src="/js/search.js?v=1777292072942"></script>
+	<script async src="/js/search.js?v=1777292072944"></script>
 
 
 
@@ -338,18 +341,20 @@
 </div><div id="nexmoe-content"><div class="nexmoe-primary"><div class="nexmoe-post">
   <article>
     
-        <div class="nexmoe-post-cover"> 
-            <img src="https://api.isoyu.com/bing_images.php" alt="Friend" loading="lazy">
-            <h1>Friend</h1>
+        <div class="nexmoe-post-cover absolute" style="padding-top: NaN%;"> 
+            <img src="https://bw.900198.xyz/img/2026/04/26" alt="ubuntu使用过程中所遇到的问题及解决办法" loading="lazy">
+            <h1>ubuntu使用过程中所遇到的问题及解决办法</h1>
         </div>
     
     
     <div class="nexmoe-post-meta">
     <div class="nexmoe-rainbow">
-        <a class="nexmoefont icon-calendar-fill">2026年04月24日</a>
+        <a class="nexmoefont icon-calendar-fill">2026年04月26日</a>
+        
+            <a class="nexmoefont icon-appstore -link" href="/categories/blog/">blog</a>
         
         
-    <a><i class="nexmoefont icon-areachart"></i>本文约0字</a>
+    <a><i class="nexmoefont icon-areachart"></i>本文约248字</a>
     <a><i class="nexmoefont icon-time-circle-fill"></i>预计需要1分钟</a>
 
     </div>
@@ -362,7 +367,15 @@
     <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=100% height=86 src="//music.163.com/outchain/player?type=2&id=553795744&auto=0&height=66"></iframe>
 
     
+    <blockquote class="post-subtitle">
+        <p>本文所有操作均在Kubuntu的wayland桌面协议下进行，其他发行版不一定适用</p>
+    </blockquote>
     
+    <h2 id="一、开始菜单"><a href="#一、开始菜单" class="headerlink" title="一、开始菜单"></a>一、开始菜单</h2><h3 id="1-电源选项功能键失效"><a href="#1-电源选项功能键失效" class="headerlink" title="1,电源选项功能键失效"></a>1,电源选项功能键失效</h3><p>在使用开始菜单电源选项功能键执行关机，重启等操作后会弹出一个全屏窗口，这个窗口就像在你的屏幕上加上了一层透明度很低的毛玻璃会卡住导致电脑无法关机，刚遇到这个问题时可以通过 <em>Ctrl+Alt+T</em> 来调出终端，输入命令来执行关机、重启等操作，虽然看不清界面，但输入命令回车后是系统可以正常执行命令的。但是后面不知道为什么这个方法失效了，命令无法正常执行，只能通过 <em>Alt+Ctrl+F3</em> 调出tty3界面登陆后输入命令，此时命令能够正常执行。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 重启命令</span></span><br><span class="line"><span class="built_in">sudo</span> reboot</span><br><span class="line"><span class="built_in">sudo</span> shutdown -t now</span><br><span class="line"></span><br><span class="line"><span class="comment"># 关机命令</span></span><br><span class="line"><span class="built_in">sudo</span> poweroff</span><br><span class="line"><span class="built_in">sudo</span> shutdown -h now</span><br></pre></td></tr></table></figure>
+
+<p>最后解决问题的方法是关闭 <em>系统设置&gt;关机与开机&gt;注销屏幕</em> 选项。</p>
+
     
   </article>
 
@@ -378,7 +391,7 @@
         <!-- 2. 标题 -->
         <p>
             <strong>本文标题：</strong>
-            <span>Friend</span>
+            <span>ubuntu使用过程中所遇到的问题及解决办法</span>
         </p>
 
         <!-- 3. 链接逻辑：二选一 -->
@@ -386,7 +399,7 @@
             <!-- 原创：显示本文链接 -->
             <p>
                 <strong>本文链接：</strong>
-                <span><a href="https://blog.onlyrxn.top/friend.html" title="https:&#x2F;&#x2F;blog.onlyrxn.top&#x2F;friend.html" target="_blank" rel="noopener">https:&#x2F;&#x2F;blog.onlyrxn.top&#x2F;friend.html</a></span>
+                <span><a href="https://blog.onlyrxn.top/2026/04/26/006/" title="https:&#x2F;&#x2F;blog.onlyrxn.top&#x2F;2026&#x2F;04&#x2F;26&#x2F;006&#x2F;" target="_blank" rel="noopener">https:&#x2F;&#x2F;blog.onlyrxn.top&#x2F;2026&#x2F;04&#x2F;26&#x2F;006&#x2F;</a></span>
             </p>
         
         
@@ -400,10 +413,12 @@
   <div class="nexmoe-post-meta nexmoe-rainbow">
    
     
+        <a class="nexmoefont icon-tag-fill -none-link" href="/tags/Ubuntu/" rel="tag">Ubuntu</a>
+    
 </div>
   
   
-    <script async src="/js/copy-codeblock.js?v=1777292072914"></script>
+    <script async src="/js/copy-codeblock.js?v=1777292072915"></script>
   
 
   
@@ -427,6 +442,13 @@ twikoo.init({
             
 
             
+            
+            <button class="mdui-fab catalog" style="overflow:unset;">
+                <i class="nexmoefont icon-catalog"></i>
+                <div class="nexmoe-toc">
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80%E3%80%81%E5%BC%80%E5%A7%8B%E8%8F%9C%E5%8D%95"><span class="toc-number">1.</span> <span class="toc-text">一、开始菜单</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E7%94%B5%E6%BA%90%E9%80%89%E9%A1%B9%E5%8A%9F%E8%83%BD%E9%94%AE%E5%A4%B1%E6%95%88"><span class="toc-number">1.1.</span> <span class="toc-text">1,电源选项功能键失效</span></a></li></ol></li></ol>
+                </div>
+            </button>
             
 
             

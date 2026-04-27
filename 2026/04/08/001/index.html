@@ -6,23 +6,22 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
 
 <link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/NuyoaH-L/dev-picgo@main/icon.jpg" type="image/x-jpg" />
-<meta name="description" content="一、安装必要软件1，keil uvision5 点此链接前往官网下载 2，STC-ISP 点此链接前往官网下载  tips:上述两程序均为完成本文时对应程序的最新版本，链接均指向官网链接  二、创建空工程启动Keil，依次点击Project→New uVision Project，选择用于存储工程的文件夹并为工程命名。  随后会弹出选择单片机型号的窗口，本人单片机型号为STC89C52RC，这里选">
+<meta name="description" content="一、安装必要软件1，keil uvision5 点此链接前往官网下载 2，STC-ISP 点此链接前往官网下载  tips:上述两程序均为完成本文时对应程序的最新版本，链接均指向官网链接  二、创建空工程启动Keil，依次点击Project→New uVision Project，选择用于存储工程的文件夹并为工程命名。   随后会弹出选择单片机型号的窗口，本人单片机型号为STC89C52RC，这里">
 <meta property="og:type" content="article">
 <meta property="og:title" content="新建工程、点亮LED、LED闪烁、LED流水灯">
 <meta property="og:url" content="https://blog.onlyrxn.top/2026/04/08/001/index.html">
 <meta property="og:site_name" content="孤灯不明思欲绝，卷帷望月空长叹">
-<meta property="og:description" content="一、安装必要软件1，keil uvision5 点此链接前往官网下载 2，STC-ISP 点此链接前往官网下载  tips:上述两程序均为完成本文时对应程序的最新版本，链接均指向官网链接  二、创建空工程启动Keil，依次点击Project→New uVision Project，选择用于存储工程的文件夹并为工程命名。  随后会弹出选择单片机型号的窗口，本人单片机型号为STC89C52RC，这里选">
+<meta property="og:description" content="一、安装必要软件1，keil uvision5 点此链接前往官网下载 2，STC-ISP 点此链接前往官网下载  tips:上述两程序均为完成本文时对应程序的最新版本，链接均指向官网链接  二、创建空工程启动Keil，依次点击Project→New uVision Project，选择用于存储工程的文件夹并为工程命名。   随后会弹出选择单片机型号的窗口，本人单片机型号为STC89C52RC，这里">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://free.picui.cn/free/2026/04/08/69d64ddca03f9.png">
 <meta property="og:image" content="https://free.picui.cn/free/2026/04/08/69d64e28986d2.png">
 <meta property="og:image" content="https://free.picui.cn/free/2026/04/08/69d64e48312b3.png">
-<meta property="og:image" content="https://img.onlyrxn.cc.cd/PicGo/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202026-04-08%20205042.png">
 <meta property="og:image" content="https://free.picui.cn/free/2026/04/08/69d650b07e82a.png">
 <meta property="og:image" content="https://free.picui.cn/free/2026/04/08/69d651f8311c9.png">
 <meta property="og:image" content="https://free.picui.cn/free/2026/04/09/69d7a88b1c0c8.png">
 <meta property="og:image" content="https://free.picui.cn/free/2026/04/09/69d7aa788eca6.png">
 <meta property="article:published_time" content="2026-04-07T16:00:00.000Z">
-<meta property="article:modified_time" content="2026-04-26T15:45:21.556Z">
+<meta property="article:modified_time" content="2026-04-27T10:13:19.340Z">
 <meta property="article:author" content="OnlyRxn">
 <meta property="article:tag" content="单片机">
 <meta name="twitter:card" content="summary">
@@ -33,16 +32,16 @@
 
 
 
-    <link rel="stylesheet" href="https://at.alicdn.com/t/c/font_5164562_tvjzszng8gd.css">
+    <link rel="stylesheet" href="https://at.alicdn.com/t/c/font_5164562_igdg31ww7e.css">
 
 
-<link rel="stylesheet" href="/css/style.css?v=1777218379274">
+<link rel="stylesheet" href="/css/style.css?v=1777292072953">
 
 
 
 
     
-        <link rel="stylesheet" href="/custom.css?v=1777218379274">
+        <link rel="stylesheet" href="/custom.css?v=1777292072953">
     
 
 
@@ -52,7 +51,7 @@
 <script src="/lib/lax.min.js" async></script>
 
 
-<script async src="/js/app.js?v=1777218379274"></script>
+<script async src="/js/app.js?v=1777292072953"></script>
 
  
 
@@ -60,14 +59,14 @@
 
 <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/atom-one-dark.min.css">
 <meta name="generator" content="Hexo 8.1.1"><link rel="alternate" href="/atom.xml" title="孤灯不明思欲绝，卷帷望月空长叹" type="application/atom+xml">
-</head><body class="nexmoe mdui-drawer-body-left"><div id="nexmoe-background"><div class="nexmoe-bg" style="background-image: url(https://bing.img.run/rand.php)"></div><div class="mdui-appbar mdui-shadow-0"><div class="mdui-toolbar"><a class="mdui-btn mdui-btn-icon mdui-ripple" mdui-drawer="{target: &#039;#drawer&#039;, swipe: true}" title="menu"><i class="mdui-icon nexmoefont icon-menu"></i></a><div class="mdui-toolbar-spacer"></div><a class="mdui-btn mdui-btn-icon" href="/" title="OnlyRxn"><img src="https://cdn.jsdelivr.net/gh/NuyoaH-L/dev-picgo@main/icon.jpg" alt="OnlyRxn"></a></div></div></div><div id="nexmoe-header"><div class="nexmoe-drawer mdui-drawer" id="drawer">
+</head><body class="nexmoe mdui-drawer-body-left"><div id="nexmoe-background"><div class="nexmoe-bg" style="background-image: url(https://api.isoyu.com/bing_images.php)"></div><div class="mdui-appbar mdui-shadow-0"><div class="mdui-toolbar"><a class="mdui-btn mdui-btn-icon mdui-ripple" mdui-drawer="{target: &#039;#drawer&#039;, swipe: true}" title="menu"><i class="mdui-icon nexmoefont icon-menu"></i></a><div class="mdui-toolbar-spacer"></div><a class="mdui-btn mdui-btn-icon" href="/" title="OnlyRxn"><img src="https://cdn.jsdelivr.net/gh/NuyoaH-L/dev-picgo@main/icon.jpg" alt="OnlyRxn"></a></div></div></div><div id="nexmoe-header"><div class="nexmoe-drawer mdui-drawer" id="drawer">
     <div class="nexmoe-avatar mdui-ripple">
         <a href="/" title="OnlyRxn">
             <img src="https://cdn.jsdelivr.net/gh/NuyoaH-L/dev-picgo@main/icon.jpg" alt="OnlyRxn" alt="OnlyRxn">
         </a>
     </div>
     <div class="nexmoe-count">
-        <div><span>文章</span>6</div>
+        <div><span>文章</span>8</div>
         <div><span>标签</span>4</div>
         <div><span>分类</span>2</div>
     </div>
@@ -80,7 +79,7 @@
             </div>
         </a>
         
-        <a class="nexmoe-list-item mdui-list-item mdui-ripple false" href="/archives.html" title="文章归档">
+        <a class="nexmoe-list-item mdui-list-item mdui-ripple false" href="/archive.html" title="文章归档">
             <i class="mdui-list-item-icon nexmoefont icon-container"></i>
             <div class="mdui-list-item-content">
                 文章归档
@@ -113,7 +112,7 @@
 </div>
 
 
-	<script async src="/js/search.js?v=1777218379274"></script>
+	<script async src="/js/search.js?v=1777292072953"></script>
 
 
 
@@ -149,7 +148,7 @@
 			></i> </a
 		><a
 			class="mdui-ripple"
-			href="https://space.bilibili.com/"
+			href="https://space.bilibili.com/687821521"
 			target="_blank"
 			mdui-tooltip="{content: 'BiliBili'}"
 			style="
@@ -162,7 +161,7 @@
 			></i> </a
 		><a
 			class="mdui-ripple"
-			href="https://www.zhihu.com/people/"
+			href="https://www.zhihu.com/people/onlyrxn"
 			target="_blank"
 			mdui-tooltip="{content: '知乎'}"
 			style="
@@ -208,7 +207,7 @@
 
         <li class="category-list-item">
           <a class="category-list-link" href="/categories/blog/">blog</a>
-          <span class="category-list-count">5</span>
+          <span class="category-list-count">7</span>
         </li>
 
         
@@ -230,7 +229,7 @@
         
   <div class="nexmoe-widget-wrap">
     <div id="randomtagcloud" class="nexmoe-widget tagcloud nexmoe-rainbow">
-      <a href="/tags/Ubuntu/" style="font-size: 10px;">Ubuntu</a> <a href="/tags/%E5%8D%95%E7%89%87%E6%9C%BA/" style="font-size: 20px;">单片机</a> <a href="/tags/%E6%96%87%E6%91%98/" style="font-size: 10px;">文摘</a> <a href="/tags/%E9%9A%8F%E6%83%B3/" style="font-size: 10px;">随想</a>
+      <a href="/tags/Ubuntu/" style="font-size: 20px;">Ubuntu</a> <a href="/tags/%E5%8D%95%E7%89%87%E6%9C%BA/" style="font-size: 15px;">单片机</a> <a href="/tags/%E6%96%87%E6%91%98/" style="font-size: 10px;">文摘</a> <a href="/tags/%E9%9A%8F%E6%83%B3/" style="font-size: 10px;">随想</a>
     </div>
     
       <script>
@@ -300,7 +299,7 @@
   <div class="nexmoe-widget-wrap">
     <h3 class="nexmoe-widget-title">文章归档</h3>
     <div class="nexmoe-widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2026/">2026</a><span class="archive-list-count">6</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2026/">2026</a><span class="archive-list-count">8</span></li></ul>
     </div>
   </div>
 
@@ -351,7 +350,7 @@
   <article>
     
         <div class="nexmoe-post-cover absolute" style="padding-top: NaN%;"> 
-            <img src="https://bw.900198.xyz/api/2026/04/08" alt="新建工程、点亮LED、LED闪烁、LED流水灯" loading="lazy">
+            <img src="https://bw.900198.xyz/img/2026/04/08" alt="新建工程、点亮LED、LED闪烁、LED流水灯" loading="lazy">
             <h1>新建工程、点亮LED、LED闪烁、LED流水灯</h1>
         </div>
     
@@ -373,6 +372,8 @@
     
     
 </div>
+    <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=100% height=86 src="//music.163.com/outchain/player?type=2&id=553795744&auto=0&height=66"></iframe>
+
     
     <blockquote class="post-subtitle">
         <p>单片机学习之旅 day_1</p>
@@ -384,25 +385,29 @@
 <p>tips:上述两程序均为完成本文时对应程序的最新版本，链接均指向官网链接</p>
 </blockquote>
 <h2 id="二、创建空工程"><a href="#二、创建空工程" class="headerlink" title="二、创建空工程"></a>二、创建空工程</h2><p>启动<strong>Keil</strong>，依次点击<strong>Project</strong>→<strong>New uVision Project</strong>，选择用于存储工程的文件夹并为工程命名。</p>
-<p><img src="https://free.picui.cn/free/2026/04/08/69d64ddca03f9.png"></p>
+<img onerror="imgOnError(this);" data-fancybox="gallery" src="https://free.picui.cn/free/2026/04/08/69d64ddca03f9.png" title="" alt="" data-caption="" loading="lazy">
+
 <p>随后会弹出选择单片机型号的窗口，本人单片机型号为STC89C52RC，这里选择MicroChip的AT89C52，实际请根据自己单片机型号进行选择。</p>
-<p><img src="https://free.picui.cn/free/2026/04/08/69d64e28986d2.png"></p>
+<img onerror="imgOnError(this);" data-fancybox="gallery" src="https://free.picui.cn/free/2026/04/08/69d64e28986d2.png" title="" alt="" data-caption="" loading="lazy">
+
 <p>选择完成后会弹出选择是否加入初始化代码询问的信息，此处通常选择“是”，初学者不知道如何修改启动代码可以选择“否”。</p>
-<p><img src="https://free.picui.cn/free/2026/04/08/69d64e48312b3.png"></p>
+<img onerror="imgOnError(this);" data-fancybox="gallery" src="https://free.picui.cn/free/2026/04/08/69d64e48312b3.png" title="" alt="" data-caption="" loading="lazy">
+
 <p>随后依次展开Project窗口的<strong>Tatget 1</strong>→<strong>Source Group 1</strong>，右键<strong>Source Group 1</strong>，点击<strong>Add New Item to Group ‘Source Group 1’</strong>，命名为main.c，写入如下代码：</p>
-<p><img src="https://img.onlyrxn.cc.cd/PicGo/%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE%202026-04-08%20205042.png"></p>
 <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">void</span> <span class="title function_">main</span><span class="params">()</span>&#123;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <p>这个工程编译运行后会让你的单片机回到初始状态。</p>
 <h2 id="三、点亮LED灯"><a href="#三、点亮LED灯" class="headerlink" title="三、点亮LED灯"></a>三、点亮LED灯</h2><p>将光标移动至main.c第一行void之前，右键打开菜单，单击<strong>Insert #include&lt;REGX52.H&gt;</strong>，也可自己在第一行输入</p>
 <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;REGX52.H&gt;</span></span></span><br></pre></td></tr></table></figure>
 
-<p><img src="https://free.picui.cn/free/2026/04/08/69d650b07e82a.png"></p>
+<img onerror="imgOnError(this);" data-fancybox="gallery" src="https://free.picui.cn/free/2026/04/08/69d650b07e82a.png" title="" alt="" data-caption="" loading="lazy">
+
 <p>查看单片机LED模块原理图，可知</p>
 <blockquote>
 <p>tips：此处为普中开发板LED模块原理图，不同型号单片机的原理也可能不同，请根据自己单片机型号查找原理图，建议询问自己购买单片机的店铺客服。且控制引脚高低电平有多种方式方式，这里以字节操作语句为例。</p>
 </blockquote>
-<p><img src="https://free.picui.cn/free/2026/04/08/69d651f8311c9.png"></p>
+<img onerror="imgOnError(this);" data-fancybox="gallery" src="https://free.picui.cn/free/2026/04/08/69d651f8311c9.png" title="" alt="" data-caption="" loading="lazy">
+
 <p>此处提供两个实例代码，并说明其作用：</p>
 <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;REGX52.H&gt;</span></span></span><br><span class="line"><span class="type">void</span> <span class="title function_">main</span><span class="params">()</span>&#123;</span><br><span class="line">    P2=<span class="number">0xFE</span>;</span><br><span class="line">    <span class="comment">//此处FE为16进制，转换为二进制为11111110，此代码可以点亮单片机LED模块第一个LED灯</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
@@ -410,7 +415,8 @@
 
 <p>显然这个程序可以通过一个由8位二进制转换而来的16进制控制单片机的LED灯，8位二进制的0代表灯亮，1代表灯灭，8位二进制从右往左对应单片机的从左往右。</p>
 <p>要生成可在STC-ISP下载到单片机的Hex文件需要打开Keil uvision的<strong>Creat HEX File</strong>选项</p>
-<p><img src="https://free.picui.cn/free/2026/04/09/69d7a88b1c0c8.png"></p>
+<img onerror="imgOnError(this);" data-fancybox="gallery" src="https://free.picui.cn/free/2026/04/09/69d7a88b1c0c8.png" title="" alt="" data-caption="" loading="lazy">
+
 <h2 id="四、Led闪烁"><a href="#四、Led闪烁" class="headerlink" title="四、Led闪烁"></a>四、Led闪烁</h2><p>打开STC-ISP程序，在工具栏找到<strong>软件延时计算器</strong>，自由设定定时长度，此处以500ms为例。</p>
 <blockquote>
 <p>tips：注意选择自己单片机型号，此处为STC89</p>
@@ -425,9 +431,7 @@
 <p>这是一种极其原始的方法，代码繁琐但必定有效，更高阶一些的写法,如<strong>unsigned char</strong>可以让控制LED的八位二进制的高电平位从右往左移动，对应单片机LED灯从左往右依次点亮后熄灭，实现流水灯的效果。</p>
 <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">unsigned</span> <span class="type">char</span> ucled=<span class="number">0x01</span>; <span class="comment">//0000 0001</span></span><br><span class="line"><span class="type">void</span> <span class="title function_">main</span><span class="params">()</span>&#123;</span><br><span class="line">    <span class="keyword">while</span>(<span class="number">1</span>)&#123;</span><br><span class="line">    P2=~ucled;</span><br><span class="line">    Delay500ms();</span><br><span class="line">    ucled&lt;&lt;=<span class="number">1</span>;</span><br><span class="line">    <span class="keyword">if</span>(ucled==<span class="number">0x00</span>) ucled=<span class="number">0x01</span>; <span class="comment">//循环</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-    <href>
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="100%" height="70" src="https://i.y.qq.com/n2/m/outchain/player/index.html?songid=126701493&amp;songtype=0"></iframe>
-
+    
   </article>
 
   
@@ -469,13 +473,13 @@
 </div>
   
   
-    <script async src="/js/copy-codeblock.js?v=1777218379242"></script>
+    <script async src="/js/copy-codeblock.js?v=1777292072918"></script>
   
 
   
       <div class="nexmoe-post-footer">
-          <div id="tcomment"></div>
-<script src="https://npm.webcache.cn/twikoo@1.7.7/dist/twikoo.all.min.js"></script>
+          <script src="https://npm.webcache.cn/twikoo@1.7.7/dist/twikoo.all.min.js"></script>
+<div id="tcomment"></div>
 <script>
 twikoo.init({
   envId: 'https://twikoo.onlyrxn.top',
