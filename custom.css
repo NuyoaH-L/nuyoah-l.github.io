@@ -55,3 +55,36 @@
   word-break: break-all;
   text-decoration: none;
 }
+
+/* Nexmoe 主题 - 文章内图片居中 */
+.nexmoe-post img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* 针对你现有的 fancybox 图片（兼容懒加载） */
+.nexmoe-post img[data-fancybox="gallery"] {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* 如果图片需要响应式最大宽度（推荐） */
+.nexmoe-post img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* 让 APlayer 容器使用 Flex 布局 */
+#aplayer,
+.aplayer {
+    display: flex !important;
+    align-items: center !important;  /* 垂直居中 */
+    justify-content: center !important;  /* 可选：水平居中 */
+}
+
+/* 让内部 body 也自适应 */
+.aplayer-body {
+    width: 100%;
+}
