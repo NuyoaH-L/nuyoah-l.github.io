@@ -49,12 +49,6 @@ function imgOnError(_this) {
     _this.onerror = null;
 }
 
-document
-    .querySelectorAll('.nexmoe-post-cover.absolute')
-    .forEach(item => {
-        item.style.minHeight = item.childNodes[3].clientHeight + 'px';
-    });
-
 window.onload = function() {
     lax.init();
 
