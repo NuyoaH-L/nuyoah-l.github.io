@@ -10,7 +10,25 @@
   <link href="https://blog.onlyrxn.top/atom.xml" rel="self"/>
   <rights>All rights reserved 2026, OnlyRxn</rights>
   <title>孤灯不明思欲绝，卷帷望月空长叹</title>
-  <updated>2026-05-09T10:43:20.261Z</updated>
+  <updated>2026-05-18T14:18:53.254Z</updated>
+  <entry>
+    <author>
+      <name>OnlyRxn</name>
+    </author>
+    <category term="blog" scheme="https://blog.onlyrxn.top/categories/blog/"/>
+    <category term="单片机" scheme="https://blog.onlyrxn.top/tags/%E5%8D%95%E7%89%87%E6%9C%BA/"/>
+    <id>https://blog.onlyrxn.top/2026/05/15/008/</id>
+    <link href="https://blog.onlyrxn.top/2026/05/15/008/"/>
+    <published>2026-05-14T16:00:00.000Z</published>
+    <summary>
+      <![CDATA[<blockquote>
+<p>本文主要记录各功能的程序实现方法，硬件原理部分仅作简要介绍。</p>
+</blockquote>
+<h2 id="一、独立按键控制LED亮灭"><a href="#一、独立按键控制LED亮灭" class="headerlink"]]>
+    </summary>
+    <title>独立按键</title>
+    <updated>2026-05-18T14:18:53.254Z</updated>
+  </entry>
   <entry>
     <author>
       <name>OnlyRxn</name>
@@ -18,14 +36,14 @@
     <category term="技术笔记" scheme="https://blog.onlyrxn.top/categories/%E6%8A%80%E6%9C%AF%E7%AC%94%E8%AE%B0/"/>
     <category term="Hexo" scheme="https://blog.onlyrxn.top/tags/Hexo/"/>
     <category term="CSS" scheme="https://blog.onlyrxn.top/tags/CSS/"/>
-    <id>https://blog.onlyrxn.top/2026/05/09/008/</id>
-    <link href="https://blog.onlyrxn.top/2026/05/09/008/"/>
+    <id>https://blog.onlyrxn.top/2026/05/09/007/</id>
+    <link href="https://blog.onlyrxn.top/2026/05/09/007/"/>
     <published>2026-05-08T16:00:00.000Z</published>
     <summary>
       <![CDATA[<h1 id="Hexo博客封面图尺寸不一致问题的完整解决记录"><a href="#Hexo博客封面图尺寸不一致问题的完整解决记录" class="headerlink"]]>
     </summary>
     <title>Hexo博客封面图尺寸不一致问题的完整解决记录</title>
-    <updated>2026-05-09T10:43:20.261Z</updated>
+    <updated>2026-05-18T14:18:52.576Z</updated>
   </entry>
   <entry>
     <author>
@@ -33,15 +51,15 @@
     </author>
     <category term="文摘" scheme="https://blog.onlyrxn.top/categories/%E6%96%87%E6%91%98/"/>
     <category term="文摘" scheme="https://blog.onlyrxn.top/tags/%E6%96%87%E6%91%98/"/>
-    <id>https://blog.onlyrxn.top/2026/04/28/007/</id>
-    <link href="https://blog.onlyrxn.top/2026/04/28/007/"/>
+    <id>https://blog.onlyrxn.top/2026/04/28/006/</id>
+    <link href="https://blog.onlyrxn.top/2026/04/28/006/"/>
     <published>2026-04-27T16:00:00.000Z</published>
     <summary>
       <![CDATA[<p>假今之世，饰邪说，文奸言，以枭乱天下，矞宇嵬琐使天下混然不知是非治乱 之所在者，有人矣。</p>
 <p>纵情性，安恣孳，禽兽行，不足以合文通治；然而其持之有故，其言之成理，]]>
     </summary>
     <title>《荀子》非十二子</title>
-    <updated>2026-05-09T10:23:13.841Z</updated>
+    <updated>2026-05-18T14:18:55.484Z</updated>
   </entry>
   <entry>
     <author>
@@ -49,14 +67,14 @@
     </author>
     <category term="blog" scheme="https://blog.onlyrxn.top/categories/blog/"/>
     <category term="Ubuntu" scheme="https://blog.onlyrxn.top/tags/Ubuntu/"/>
-    <id>https://blog.onlyrxn.top/2026/04/26/006/</id>
-    <link href="https://blog.onlyrxn.top/2026/04/26/006/"/>
+    <id>https://blog.onlyrxn.top/2026/04/26/005/</id>
+    <link href="https://blog.onlyrxn.top/2026/04/26/005/"/>
     <published>2026-04-25T16:00:00.000Z</published>
     <summary>
       <![CDATA[<h2 id="一、开始菜单"><a href="#一、开始菜单" class="headerlink" title="一、开始菜单"></a>一、开始菜单</h2><h3 id="1-电源选项功能键失效"><a href="#1-电源选项功能键失效"]]>
     </summary>
     <title>ubuntu使用过程中所遇到的问题及解决办法</title>
-    <updated>2026-05-09T10:23:06.211Z</updated>
+    <updated>2026-05-18T14:18:55.052Z</updated>
   </entry>
   <entry>
     <author>
@@ -64,14 +82,14 @@
     </author>
     <category term="blog" scheme="https://blog.onlyrxn.top/categories/blog/"/>
     <category term="Ubuntu" scheme="https://blog.onlyrxn.top/tags/Ubuntu/"/>
-    <id>https://blog.onlyrxn.top/2026/04/24/004/</id>
-    <link href="https://blog.onlyrxn.top/2026/04/24/004/"/>
+    <id>https://blog.onlyrxn.top/2026/04/24/003/</id>
+    <link href="https://blog.onlyrxn.top/2026/04/24/003/"/>
     <published>2026-04-23T16:00:00.000Z</published>
     <summary>
       <![CDATA[<img onerror="imgOnError(this);" data-fancybox="gallery"]]>
     </summary>
     <title>ubuntu使用过程中所遇到的问题及解决办法</title>
-    <updated>2026-05-09T10:22:56.471Z</updated>
+    <updated>2026-05-18T14:18:52.073Z</updated>
   </entry>
   <entry>
     <author>
@@ -79,14 +97,14 @@
     </author>
     <category term="文摘" scheme="https://blog.onlyrxn.top/categories/%E6%96%87%E6%91%98/"/>
     <category term="文摘" scheme="https://blog.onlyrxn.top/tags/%E6%96%87%E6%91%98/"/>
-    <id>https://blog.onlyrxn.top/2026/04/24/005/</id>
-    <link href="https://blog.onlyrxn.top/2026/04/24/005/"/>
+    <id>https://blog.onlyrxn.top/2026/04/24/004/</id>
+    <link href="https://blog.onlyrxn.top/2026/04/24/004/"/>
     <published>2026-04-23T16:00:00.000Z</published>
     <summary>
       <![CDATA[<h2 id="人工智能给我大学四年的本科生活带来的撕裂感"><a href="#人工智能给我大学四年的本科生活带来的撕裂感" class="headerlink"]]>
     </summary>
     <title>人工智能给我大学四年的本科生活带来的撕裂感</title>
-    <updated>2026-05-09T10:23:01.182Z</updated>
+    <updated>2026-05-18T14:18:53.666Z</updated>
   </entry>
   <entry>
     <author>
@@ -94,27 +112,12 @@
     </author>
     <category term="blog" scheme="https://blog.onlyrxn.top/categories/blog/"/>
     <category term="随想" scheme="https://blog.onlyrxn.top/tags/%E9%9A%8F%E6%83%B3/"/>
-    <id>https://blog.onlyrxn.top/2026/04/18/003/</id>
-    <link href="https://blog.onlyrxn.top/2026/04/18/003/"/>
+    <id>https://blog.onlyrxn.top/2026/04/18/002/</id>
+    <link href="https://blog.onlyrxn.top/2026/04/18/002/"/>
     <published>2026-04-17T16:00:00.000Z</published>
     <summary>这里的内容加密了，需要密码哦。</summary>
     <title>今日今时所想之事</title>
-    <updated>2026-05-09T10:22:49.792Z</updated>
-  </entry>
-  <entry>
-    <author>
-      <name>OnlyRxn</name>
-    </author>
-    <category term="blog" scheme="https://blog.onlyrxn.top/categories/blog/"/>
-    <category term="单片机" scheme="https://blog.onlyrxn.top/tags/%E5%8D%95%E7%89%87%E6%9C%BA/"/>
-    <id>https://blog.onlyrxn.top/2026/04/11/002/</id>
-    <link href="https://blog.onlyrxn.top/2026/04/11/002/"/>
-    <published>2026-04-10T16:00:00.000Z</published>
-    <summary>
-      <![CDATA[<h2 id="一、独立按键"><a href="#一、独立按键" class="headerlink" title="一、独立按键"></a>一、独立按键</h2><p><img onerror="imgOnError(this);"]]>
-    </summary>
-    <title>独立按键、按键控制移位、按键函数的封装</title>
-    <updated>2026-05-09T10:22:43.493Z</updated>
+    <updated>2026-05-18T14:18:51.513Z</updated>
   </entry>
   <entry>
     <author>
@@ -130,19 +133,5 @@
     </summary>
     <title>新建工程、点亮LED、LED闪烁、LED流水灯</title>
     <updated>2026-05-09T10:22:36.015Z</updated>
-  </entry>
-  <entry>
-    <author>
-      <name>OnlyRxn</name>
-    </author>
-    <category term="blog" scheme="https://blog.onlyrxn.top/categories/blog/"/>
-    <id>https://blog.onlyrxn.top/2026/04/04/hello-world/</id>
-    <link href="https://blog.onlyrxn.top/2026/04/04/hello-world/"/>
-    <published>2026-04-03T16:00:00.000Z</published>
-    <summary>
-      <![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a>]]>
-    </summary>
-    <title>Hello World</title>
-    <updated>2026-04-26T15:45:38.593Z</updated>
   </entry>
 </feed>
