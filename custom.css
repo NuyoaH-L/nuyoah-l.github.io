@@ -1,0 +1,19 @@
+/* ===== APlayer 置于最顶层 ===== */
+.aplayer.aplayer-fixed {
+  z-index: 10000 !important;
+}
+
+/* ===== 移动端封面高度调整 ===== */
+@media (max-width: 768px) {
+  .nexmoe-post-cover {
+    padding-top: 50% !important;
+    min-height: 200px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .nexmoe-post-cover {
+    padding-top: 56.25% !important;
+    min-height: 180px !important;
+  }
+}
